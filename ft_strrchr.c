@@ -1,20 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ykhindou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 16:40:59 by ykhindou          #+#    #+#             */
-/*   Updated: 2024/10/24 09:48:47 by ykhindou         ###   ########.fr       */
+/*   Created: 2024/10/24 10:20:42 by ykhindou          #+#    #+#             */
+/*   Updated: 2024/10/24 12:02:13 by ykhindou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+char    *ft_strrchr(const char *s, int c)
 {
-	if (c >= 'A' && c <= 'B')
-		return (c + 32);
-	return (c);
+	int	i;
+
+	i = 0;
+	while (s[i])
+		i++;
+	if (c == '\0')
+		return ((char *)(s + i));
+	while (--i >= 0)
+		if (s[i] == (char)c)
+			return ((char *)(s + i));
+	return (NULL);
 }
