@@ -6,7 +6,7 @@
 /*   By: ykhindou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 11:18:45 by ykhindou          #+#    #+#             */
-/*   Updated: 2024/10/26 09:13:04 by ykhindou         ###   ########.fr       */
+/*   Updated: 2024/10/26 22:19:29 by ykhindou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 #include <string.h>
 #include <stdlib.h>
+#include <limits.h> 
 
 int	ft_isalpha(int c);
 int	ft_isdigit(int c);

@@ -16,13 +16,13 @@ $(NAME) : $(OBJ)
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-test: $(OBJ) $(NAME)
-	$(CC) -o $@ main.o -L. -lft
+test:$(NAME) main.c
+	$(CC) -o $@ main.c -L. -lft
 clean:
 	$(RM) $(OBJ)
 
 fclean: clean
-	$(RM) $(NAME)
+	$(RM) $(NAME) test
 re: fclean all
 
 .PHONY: all clean fclean re
