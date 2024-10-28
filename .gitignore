@@ -1,4 +1,4 @@
-main*
+
 *.o
 test_*
 libft.a
