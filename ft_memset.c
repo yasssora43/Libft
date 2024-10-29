@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ykhindou <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ykhindou <ykhindou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 09:22:46 by ykhindou          #+#    #+#             */
-/*   Updated: 2024/10/23 09:50:39 by ykhindou         ###   ########.fr       */
+/*   Updated: 2024/10/29 10:57:29 by ykhindou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,5 @@ void	*ft_memset(void *s, int c, size_t n)
 		*buffer++ = (unsigned char)c;
 		n--;
 	}
-
 	return (s);
 }

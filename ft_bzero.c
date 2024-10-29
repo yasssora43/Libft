@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ykhindou <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ykhindou <ykhindou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 09:55:13 by ykhindou          #+#    #+#             */
-/*   Updated: 2024/10/23 10:16:22 by ykhindou         ###   ########.fr       */
+/*   Updated: 2024/10/29 10:59:56 by ykhindou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,4 @@ void	ft_bzero(void *s, size_t n)
 	buffer = (unsigned char *)s;
 	while (n--)
 		*buffer++ = 0;
-
 }
-

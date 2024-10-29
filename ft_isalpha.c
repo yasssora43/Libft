@@ -6,7 +6,7 @@
 /*   By: ykhindou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 08:55:31 by ykhindou          #+#    #+#             */
-/*   Updated: 2024/10/28 11:25:37 by ykhindou         ###   ########.fr       */
+/*   Updated: 2024/10/29 09:34:50 by ykhindou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,11 @@ void test_ft_isalpha()
 		int result = ft_isalpha(c);
 		if (result == expected)
 		{
-			printf("Test passed: ft_isalpha('%c') => %d (expected %d)\n", c, result, expected);
+			printf("Test passed: ft_isalpha('%c') \
+			=> %d (expected %d)\n", c, result, expected);
 		}else{
-			printf("Test failed: ft_isalpha('%c') => %d (expected %d)\n", c, result, expected);
+			printf("Test failed: ft_isalpha('%c') => 
+			%d (expected %d)\n", c, result, expected);
 		}
 	}
 
