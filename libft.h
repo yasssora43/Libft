@@ -6,12 +6,13 @@
 /*   By: ykhindou <ykhindou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 11:18:45 by ykhindou          #+#    #+#             */
-/*   Updated: 2024/10/29 20:09:02 by ykhindou         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:25:47 by ykhindou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# include <unistd.h>
 # include <string.h>
 # include <stdlib.h>
 # include <limits.h>
@@ -49,9 +50,9 @@ char			**ft_split(char const *s, char c);
 char			*ft_itoa(int n);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void			ft_striteri(char *s, void (*f)(unsigned int, char *));
-void            ft_putchar_fd(char c, int fd);
-void            ft_putstr_fd(char *s, int fd);
-void            ft_putendl_fd(char *s, int fd);
-void            ft_putnbr_fd(int n, int fd);
+void			ft_putchar_fd(char c, int fd);
+void			ft_putstr_fd(char *s, int fd);
+void			ft_putendl_fd(char *s, int fd);
+void			ft_putnbr_fd(int n, int fd);
 
 #endif

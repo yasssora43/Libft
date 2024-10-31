@@ -6,7 +6,7 @@
 /*   By: ykhindou <ykhindou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 08:56:55 by ykhindou          #+#    #+#             */
-/*   Updated: 2024/10/29 11:55:45 by ykhindou         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:30:38 by ykhindou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	j;
 
 	if (big == NULL || len == 0 || little == NULL)
-		return (NULL);
+		return ((char *)big);
 	i = 0;
 	if (little[0] == '\0')
 		return ((char *)(big));

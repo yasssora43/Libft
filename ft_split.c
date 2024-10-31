@@ -6,7 +6,7 @@
 /*   By: ykhindou <ykhindou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 09:22:07 by ykhindou          #+#    #+#             */
-/*   Updated: 2024/10/29 19:06:53 by ykhindou         ###   ########.fr       */
+/*   Updated: 2024/10/31 09:17:05 by ykhindou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,11 @@ int	is_delimiter(char delimiter, char c)
 
 int	count_words(const char *s, char c)
 {
-	int i;
-	int total_words;
+	int	i;
+	int	total_words;
 
+	if (!s)
+		return (-1);
 	i = 0;
 	total_words = 0;
 	while (s[i])
@@ -36,10 +38,11 @@ int	count_words(const char *s, char c)
 	return (total_words);
 }
 
-char *new_word(const char *s, int *index, char c)
+char	*new_word(const char *s, int *index, char c)
 {
-	int len;
-	char *word;
+	int		len;
+	char	*word;
+
 	len = 0;
 	while (s[*index] && !is_delimiter(c, s[*index]))
 	{
@@ -55,15 +58,14 @@ char *new_word(const char *s, int *index, char c)
 		word[0] = '\0';
 	return (word);
 }
-char **ft_split(char const *s, char c)
-{
-	char **strings;
-	int i;
-	int j;
-	int count;
 
-	if (!s)
-		return (NULL);
+char	**ft_split(char const *s, char c)
+{
+	char	**strings;
+	int		i;
+	int		j;
+	int		count;
+
 	count = count_words(s, c);
 	strings = (char **)malloc((count + 1) * sizeof(char *));
 	if (!strings)
@@ -75,10 +77,7 @@ char **ft_split(char const *s, char c)
 		while (s[i] && is_delimiter(c, s[i]))
 			i++;
 		if (s[i] && !is_delimiter(c, s[i]))
-		{
-			strings[j] = new_word(s, &i, c);
-			j++;
-		}
+			strings[j++] = new_word(s, &i, c);
 		while (s[i] && !is_delimiter(c, s[i]))
 			i++;
 	}
