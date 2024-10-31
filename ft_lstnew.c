@@ -3,17 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ykhindou <ykhindou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 15:21:42 by marvin            #+#    #+#             */
-/*   Updated: 2024/10/31 15:21:42 by marvin           ###   ########.fr       */
+/*   Updated: 2024/10/31 15:42:44 by ykhindou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
-t_list  *ft_lstnew(void *content)
+t_list	*ft_lstnew(void *content)
 {
-
 }
