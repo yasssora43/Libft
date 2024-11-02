@@ -6,7 +6,7 @@
 /*   By: ykhindou <ykhindou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 15:29:11 by ykhindou          #+#    #+#             */
-/*   Updated: 2024/10/31 15:41:17 by ykhindou         ###   ########.fr       */
+/*   Updated: 2024/11/02 21:47:59 by ykhindou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_list 	*tmp;
+	t_list	*tmp;
 
 	if (*lst == NULL || del == NULL)
-		return;
+		return ;
 	while (*lst)
 	{
 		tmp = (*lst)->next;
