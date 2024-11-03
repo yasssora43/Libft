@@ -6,7 +6,7 @@
 /*   By: ykhindou <ykhindou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 09:13:41 by ykhindou          #+#    #+#             */
-/*   Updated: 2024/10/29 12:21:34 by ykhindou         ###   ########.fr       */
+/*   Updated: 2024/11/03 08:46:10 by ykhindou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ char	*ft_strdup(const char *s1)
 	size_t		len;
 	size_t		i;
 
-	if (s1 == NULL)
-		return (NULL);
 	len = 0;
 	while (s1[len])
 		len++;
